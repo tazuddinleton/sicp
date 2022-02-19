@@ -81,3 +81,10 @@ Two ways to express conditionals in Scheme,
 ```
 (if(<predicate> <consequent> <alternative>))
 ```
+## 1.1.8 Procedures as Black-Box Abstractions
+- Procedural abstraction is the idea that a procedure `(square x)` how it calculate the square of some number x is irrelevant to the user 
+- Formal parameters are called bound variable to a procedure body
+- Global variables are free variable to a procedure body
+- The set of expression for which a variable name is bound is called it's *scope*, thus formal parameters have the full body as its scope
+- When we define auxiliary procedures inside a procedure to hide the implementation detail from outside world we create *Block Structure*
+- The formal parameters of first procedure acts as free variable for internally defined procedures, which is called *lexical scoping*
